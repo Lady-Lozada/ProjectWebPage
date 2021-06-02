@@ -1,0 +1,937 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/********** Inicio **********/
+.content-pedro, .content-categoria,
+ .content-noticia, .content-about{
+    width: 90%;
+    padding: 10vh 0;
+    min-height: 100vh;
+    max-height: 900vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/******* Seccion 1: Banner *******/
+.banner {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 20px;
+    overflow: hidden
+}
+
+.banner .content-row {
+    display: flex;
+    width: 400%;
+    height: 100vh;
+    animation: banner 35s infinite; 
+    transition: 2s all;
+}
+
+.banner .content-row .col-100{
+    width: 100%;
+    height: 100vh;
+}
+
+.banner .content-row .col-100 img{
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes banner{
+    25%{
+        margin-left: -100%;
+    }
+    50%{
+        margin-left: -200%;
+    }
+    75%{
+        margin-left: -300%;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+/******* Seccion 2: Pedro Pablo *******/
+
+.content-pedro{
+    width: 100%;
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 3%;
+    padding: 10vh 0;
+    
+}
+.content-pedro div.text{
+    width: 25%;
+    margin: 5%;
+    padding: 1%;
+    font-size: 1.2em;
+}
+.content-pedro div.text p{
+    width: 90%;
+}
+.content-pedro div.text a{
+    text-decoration: none;
+    color: #212529;
+}
+.content-pedro div.imagen{
+    width: 50%;
+}
+.content-pedro div.imagen img{
+    width: 100%;
+    height: 90vh !important;
+}
+
+/************* Taller Arte Maestro ***************/
+
+.content-action{
+    width: 100%;
+    background-image: url("../image/inicio/colorful-2174045_1280.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.content-action .row-action{
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.content-action .row-action .action{
+    margin-left: 120px;
+    width: 45%;
+    position: absolute;
+    top: 260vh;
+    transition: ease-in-out 0.7s;
+}
+
+.content-action .row-action .title-action h3:hover{
+    transform: translate(50px);
+}
+
+.content-action .row-action .title-action h3{
+    font-size: 3em;
+    color: azure;
+    margin: 0 0 3% 0;
+}
+
+.content-action .row-action .contact{
+    width: 100%;
+    font-size: 2em;
+    filter: drop-shadow(2px 2px black);
+    color: white;
+    margin: 0 0 3% 0;
+}
+
+.content-action .row-action .boot:hover{
+    background-color: azure;
+    color:  #212529;
+    cursor: pointer;
+}
+
+
+/******* Seccion 3: Categorias *******/
+.content-categoria{
+    width: 100%;
+    height: 110vh !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+.content-categoria .row{
+    width: 100%;
+    height: 80vh !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-categoria .row .col-30{
+    width: 35em;
+    height: 65vh;
+    margin-right: 25px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.content-categoria .row .col-30 h2 a{
+    text-decoration: none;
+    color: #E4AF59;
+    text-shadow: 1px 1px 2px black;
+}
+
+.content-categoria .row .col-30:nth-child(1){
+    background-image: url('../image/inicio/obras.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.7s;
+    
+}
+.content-categoria .row .col-30:nth-child(2){
+    background-image: url('../image/inicio/galeria.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.7s;
+}
+.content-categoria .row .col-30:nth-child(2):hover,
+.content-categoria .row .col-30:nth-child(1):hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 15px #212529);
+}
+.content-categoria .row .col-30 h2{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: azure;
+    font-family: 'Barlow', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+}
+
+/******* Seccion 4: Noticias *******/
+.content-noticia{
+    padding-top: 5vh;
+    width: 100%;
+    height: 100vh !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-noticia .cont-text{
+    margin-top: 2%;
+}
+
+.content-about:nth-child(2) div.text h1,
+.content-about:nth-child(3) div.text h1,
+.content-about:nth-child(4) div.text h1,
+.content:nth-child(2) h1,
+.content:nth-child(3) h1, 
+.content:nth-child(4) h1{
+    color: black;
+    text-shadow: 1px 1px 2px #E4AF59;
+}
+
+
+/********** Obras y Galeria**********/
+
+.content-ob{
+    width: 100%;
+    max-height: 1000vh !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 2% 0 20% 0;
+}
+
+.content-img{
+    width: 90%;
+    max-height: 900vh;
+    display: flex;
+    align-items: center;
+}
+
+.ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.ul li{
+    list-style: none;
+}
+
+.ul li a{
+    display: block;
+    margin: auto;
+    position: relative;
+}
+.ul li a img{
+    width: auto; 
+    max-height: 40vh;
+    border-radius: 10px;
+    margin: 5px;
+    z-index: 0;
+}
+
+/************* RESPONSIVE INICIO***************/
+
+@media only screen and (max-width: 1080px) and (min-width: 769px){
+    .content-categoria{
+        height: 150vh !important;
+    }
+    .content-categoria .row{
+        width: 90%;
+        height: 70vh !important;
+    }
+    .content-categoria .row .col-30{
+        height: 57vh;
+        margin: 1%;
+    }
+    .content-noticia {
+        width: 90%;
+    }
+    .content-action .row-action .action{
+        margin-left: 120px;
+        width: 70%;
+        top: 265vh;
+    }
+    .content-action .row-action .title-action h3{
+        font-size: 2.5em;
+    }
+    
+    .content-action .row-action .contact{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px){
+    
+    /******* Seccion 2: Pedro Pablo *******/
+    .content-pedro{
+        height: 120vh !important;
+        flex-direction: column;
+    }
+    .content-pedro div.text{
+        width: 70%;
+        margin: 1%;
+        font-size: 1em;
+    }
+    .content-pedro div.imagen{
+        width: 70%;
+    }
+    .content-pedro div.imagen img{
+        width: 100%;
+        height: 60vh !important;
+    }
+    .content-pedro div.text{
+        text-align: center;
+    }   
+
+    /******* Seccion 3: Categorias *******/
+    .content-categoria{
+        height: 150vh !important;
+    }
+    .content-categoria .row{
+        width: 90%;
+    }
+    .content-categoria .row .col-30{
+        height: 57vh;
+        margin: 1%;
+    }
+
+    /******* Seccion 4: Noticias *******/
+    .content-noticia{
+        padding-top: 5vh;
+        width: 95%;
+        height: 100vh;
+    }
+    .content-noticia .card-title,
+    .content-noticia .card-text {
+       font-size: 1.2em;
+    }
+
+    /******* Seccion 4: Noticias *******/
+    .content-action .row-action .action{
+        width: 90%;
+        top: 280vh;
+    }
+    
+}
+
+@media only screen and (max-width: 480px){
+    /******* Seccion 2: Pedro Pablo *******/
+    .banner {
+        height: 75vh;
+    }
+    .content-pedro{
+        height: 120vh !important;
+        flex-direction: column;
+    }
+    .content-pedro div.text{
+        width: 80%;
+        margin: 1%;
+        font-size: 1em;
+        text-align: center;
+    }
+    .content-pedro div.imagen{
+        width: 90%;
+    }
+    .content-pedro div.imagen img{
+        width: 100%;
+        height: 55vh !important;
+    }
+    /******* Accion *******/
+    .content-action{
+        height: 50vh;
+    }
+    .content-action .row-action{
+        height: 50vh;
+    }
+    .content-action .row-action .action{
+        margin-left: 0;
+        width: 100%;
+        top: 242vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content-action .row-action .title-action h3{
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .content-action .row-action .contact{
+        font-size: 1em;
+        text-align: center;
+    }
+    
+
+    /******* Seccion 3: Categorias *******/
+    .content-categoria{
+        height: 150vh !important;
+    }
+    .content-categoria .row{
+        width: 90%;
+        height: 70vh !important;
+    }
+    .content-categoria .row .col-30{
+        height: 57vh;
+        margin: 1%;
+    }
+    .content-noticia,
+    .content-noticia .cont-text{
+        padding: 0;
+        height: 270vh !important;
+        justify-content: start;
+    }
+}
+
+/************* FIN RESPONSIVE INICIO***************/
+
+/********** Nosotros **********/
+.content-about{
+    padding: 0;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-about:nth-child(1){
+    width: 80%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.content-about:nth-child(1) #fija{
+    width: 100%;
+    height: 56vh;
+    table-layout: fixed;
+}
+.content-about:nth-child(1) .slider{
+    width: 20%;
+    -webkit-transition: width 0.4s ease 0s, ease-out 0.4s, background-color 0.4s; /* chrome */
+    -moz-transition: width 0.4s ease 0s, ease-out 0.4s, background-color 0.4s; /* firefox */
+    -o-transition: width 0.4s ease 0s, ease-out 0.4s, background-color 0.4s; /* opera */
+    transition: width 0.4s ease 0s, ease-out 0.4s, background-color 0.4s; /* explorer */
+}
+
+.content-about:nth-child(1) .slider img{
+    width: 100%;
+    height: 55vh;
+    border-radius: 10px;
+}
+
+.content-about:nth-child(1) .slider:hover{
+    width: 40%;
+    /* filter: drop-shadow(0px 0px 15px #E4AF59); */
+    filter: drop-shadow(0px 0px 15px #212529);
+}
+
+.content-about:nth-child(2),
+.content-about:nth-child(3),
+.content-about:nth-child(4){
+    width: 100%;
+    height: 90vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.content-about:nth-child(2) div.text,
+.content-about:nth-child(3) div.text,
+.content-about:nth-child(4) div.text{
+    width: 30%;
+    margin: 3%;
+    padding: 3%;
+    font-size: 1.2em;
+}
+.content-about:nth-child(3) div.text p{
+    width: 90%;
+}
+.content-about:nth-child(2) div.text p,
+.content-about:nth-child(2) div.text h1,
+.content-about:nth-child(4) div.text p,
+.content-about:nth-child(4) div.text h1{
+    text-align: right;
+    
+}
+.content-about:nth-child(2) div.text a,
+.content-about:nth-child(3) div.text a,
+.content-about:nth-child(4) div.text a{
+    text-decoration: none;
+    color: #212529;
+}
+.content-about:nth-child(2) div.imagen,
+.content-about:nth-child(3) div.imagen,
+.content-about:nth-child(4) div.imagen{
+    width: 35%;
+}
+.content-about:nth-child(2) div.imagen img,
+.content-about:nth-child(3) div.imagen img,
+.content-about:nth-child(4) div.imagen img{
+    width: 100%;
+    height: 70vh !important;
+    filter: drop-shadow(0px 0px 15px #212529);
+}
+
+/************* RESPONSIVE NOSOTROS***************/
+@media(max-width: 1080px){
+    .content-about:nth-child(2) div.text,
+    .content-about:nth-child(4) div.text{
+        width: 40%;
+        padding-right: 4%;
+    }
+    .content-about:nth-child(3) div.text{
+        width: 40%;
+        padding-left: 4%;
+    }
+    .content-about:nth-child(2) div.imagen,
+    .content-about:nth-child(3) div.imagen,
+    .content-about:nth-child(4) div.imagen{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .content-about:nth-child(1){
+        width: 90%;
+    }
+    .content-about:nth-child(1) .slider:hover{
+        width: 80%;
+    }
+}
+
+@media(max-width: 480px){
+
+    .content-about:nth-child(1){
+        width: 95%;
+    }
+    .content-about:nth-child(1) .slider{
+        width: 15%;
+    }
+    .content-about:nth-child(1) .slider:hover{
+        width: 100%;
+    }
+
+    .content-about{
+        width: 90%;
+    }
+    .content-about:nth-child(2),
+    .content-about:nth-child(3),
+    .content-about:nth-child(4){
+        flex-direction: column;
+        width: 100% !important;
+        height: 125vh !important;
+    }
+    .content-about:nth-child(2) div.text,
+    .content-about:nth-child(3) div.text,
+    .content-about:nth-child(4) div.text{
+        width: 95%;
+        margin: 1%;
+    }
+    .content-about:nth-child(2) div.text p,
+    .content-about:nth-child(2) div.text h1,
+    .content-about:nth-child(3) div.text p,
+    .content-about:nth-child(3) div.text h1,
+    .content-about:nth-child(4) div.text p,
+    .content-about:nth-child(4) div.text h1{
+        text-align: center;
+    }
+    .content-about:nth-child(2) div.imagen,
+    .content-about:nth-child(3) div.imagen,
+    .content-about:nth-child(4) div.imagen{
+        width: 95%;
+    }
+    
+    .content-about:nth-child(3) div.imagen {
+        position: relative;
+        top: 50vh;
+    }
+    .content-about:nth-child(3) div.text{
+        position: relative;
+        bottom: 60vh;
+    }
+    .content-about:nth-child(3) div.text p#mision{
+        width: 100%;
+    }
+
+    .content-about:nth-child(2) div.imagen img,
+    .content-about:nth-child(3) div.imagen img,
+    .content-about:nth-child(4) div.imagen img{
+        height: 60vh !important;
+    }
+}
+
+/************* FIN RESPONSIVE NOSOTROS***************/
+
+
+/************* RESPONSIVE OBRA Y GALERIA ***************/
+@media only screen and (max-width: 1080px) and (min-width: 769px){
+    .content-ob{
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    .content-ob #textObras{
+        margin: 20vh 1% 10vh 1%;
+        height: 300vh;
+    }
+    .content-ob #textGaleria{
+        margin: 60vh 1% 50vh 1%;
+        height: 300vh;
+    }
+}
+
+@media(max-width: 480px){
+    .content-ob #textObras{
+        margin: 20vh 1% 10vh 1%;
+        height: 700vh;
+    }
+    .content-ob #textGaleria{
+        margin: 55vh 1% 50vh 1%;
+        height: 550vh;
+    }
+}
+
+/************* FIN RESPONSIVE OBRA Y GALERIA ***************/
+
+
+
+/********** Contacto **********/
+
+.container_contacto{
+    width: 100%;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 160vh;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.contacto_left_msg_49 {
+    width: 49%;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: start;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-right: 3%;
+}
+/* .contacto_bar_1_center {
+    border: solid .5px #E4AF59;
+    height: 90vh;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+} */
+.contacto_left_msg_49_h1 {
+    font-weight: 700;
+    font-family: 'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    color: #3a3a3a;
+    font-size: 3.75rem;
+    font-weight: 400;
+    margin-top: 7rem;
+}
+.contacto_left_msg_49_h2 {
+    font-weight: 400;
+    font-family: 'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    font-size: .875rem;
+    color: #3a3a3a;
+    font-size: 1.875rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    font-weight: initial;
+}
+.contacto_rigth_msg_49 {
+    border-left: solid .5px #E4AF59;
+    width: 49%;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.contacto_rigth_form {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 3.125rem;
+}
+.contacto_rigth_form_fullName {
+    background-color: transparent;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: .525rem 0;
+}
+.contacto_rigth_form_fullName_inp {
+    outline: none;
+    padding: 17px 20px 17px 20px;
+    border: none;
+    border-bottom: solid .5px #ededed;
+    border-left: solid .5px #ededed;
+    border-right: solid .5px #ededed;
+    border-top: solid .5px #ededed;
+    border-radius: 6.4px;
+    font-size: .9375rem;
+    color: #4b4b4b;
+    font-family: 'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    font-weight: 400;
+}
+.contacto_rigth_form_comments {
+    background-color: transparent;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: .625rem 0;
+}
+.contacto_rigth_form_comments_text {
+    outline: none;
+    padding: 17px 20px 17px 20px;
+    border: none;
+    border-bottom: solid .5px #ededed;
+    border-left: solid .5px #ededed;
+    border-right: solid .5px #ededed;
+    border-top: solid .5px #ededed;
+    border-radius: 6.4px;
+    font-size: .9375rem;
+    color: #4b4b4b;
+    font-family: 'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    font-weight: 400;
+}
+.contacto_rigth_form_comments_text_sp {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    color: rgb(231, 76, 60);
+}
+textarea {
+    writing-mode: horizontal-tb;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    resize: auto;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding: 2px;
+} 
+
+.contacto_rigth_form_bt {
+    border: 0;
+    border-radius: .3125rem;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 1.25rem;
+    margin: .625rem 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px 0 #dbdbdb;
+    color: #fff;
+    height: 2.8125rem;
+}
+
+button {
+    writing-mode: horizontal-tb;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    cursor: default;
+    font: 400 13.3333px Arial;
+}
+
+/********** Contacto **********/
+
+/************* RESPONSIVE ***************/
+
+@media only screen and (max-width: 1080px) and (min-width: 769px) {
+    
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    
+    .contacto_left_msg_49{
+        width: 100%;
+        margin: 0 3%;
+    }
+    .contacto_left_msg_49_h1{
+        font-size: 3rem;
+        margin-top: 10vh;
+    }
+    .contacto_left_msg_49_h2{
+        font-size: 1.7rem;
+    }
+    .contacto_rigth_msg_49{
+        width: 100%;
+        margin: 0 3%;
+        border-top: solid .5px #E4AF59;
+        border-left: none;
+    }
+    .contacto_rigth_form {
+        padding: 2rem;
+    }
+    .contacto_bar_1_center {
+        border: none;
+        height: none;
+        -webkit-align-self: none;
+        -ms-flex-item-align: none;
+        align-self: none;
+    }
+}
+
+@media(max-width: 480px){
+    .contacto_left_msg_49{
+        width: 100%;
+        margin: 0 3% 4% 3%;
+        padding: 0;
+    }
+    .contacto_left_msg_49_h1{
+        font-size: 3rem;
+        margin-top: 7vh;
+    }
+    .contacto_left_msg_49_h2{
+        font-size: 1.7rem;
+    }
+    .contacto_rigth_msg_49{
+        width: 100%;
+        margin: 0 3%;
+        border-top: solid .5px #E4AF59;
+        border-left: none;
+    }
+    .contacto_rigth_form {
+        padding: 2rem;
+    }
+    .contacto_bar_1_center {
+        border: none;
+        height: none;
+        -webkit-align-self: none;
+        -ms-flex-item-align: none;
+        align-self: none;
+    }
+}
+
+
